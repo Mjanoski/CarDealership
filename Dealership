@@ -1,0 +1,43 @@
+/*
+Project: Car Dealership Project
+Course: IST 242
+Author: Michael Janoski
+Date Developed: 3/1/2019
+Last Date Changed: 4/18/19
+Rev: development build 1
+*/
+package com.company;
+import java.util.ArrayList;
+
+public class Dealership {
+    //Variables
+    private String Address, Email;
+    private int PhoneNumber, Hours;
+
+    //Constructor
+    public Dealership(String _Address, String _Email, int _PhoneNumber, int _Hours) {
+        this.Address = _Address;
+        this.Email = _Email;
+        this.PhoneNumber = _PhoneNumber;
+        this.Hours = _Hours;
+    }
+
+    //Getters and Setters
+    public String getAddress() {return Address;}
+    public void setAddress(String _Address) {this.Address = _Address; }
+    public String getEmail() {return Email; }
+    public void setEmail(String _Email) {this.Email = _Email;}
+    public int getPhoneNumber() {return PhoneNumber;}
+    public void setPhoneNumber(int _PhoneNumber) {this.PhoneNumber = _PhoneNumber;}
+    public int getHours() {return Hours;}
+    public void setHours(int _Hours) {this.Hours = _Hours;}
+
+    public static void PrintDealershipInfo(ArrayList<Dealership> DealershipList) {
+        for (Dealership dealership : DealershipList) {
+            System.out.println("Dealership Address: " + dealership.getAddress());
+            System.out.println("Dealership Email: " + dealership.getEmail());
+            System.out.println("Dealership Phone Number: " + dealership.getPhoneNumber());
+            System.out.println("Dealership Hours: " + dealership.getHours());
+        }
+    }
+}
