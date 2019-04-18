@@ -1,0 +1,13 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Dealership d1 = new Dealership("t",  "", 1, 1);
+        ArrayList<Dealership> DealershipList = new ArrayList<>();
+        DealershipList.add(d1);
+        Dealership.PrintDealershipInfo(DealershipList);
+    }
+}
