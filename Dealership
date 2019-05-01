@@ -11,11 +11,10 @@ import java.util.ArrayList;
 
 public class Dealership {
     //Variables
-    private String Address, Email;
-    private int PhoneNumber, Hours;
+    private String Address, Email, PhoneNumber, Hours;
 
     //Constructor
-    public Dealership(String _Address, String _Email, int _PhoneNumber, int _Hours) {
+    public Dealership(String _Address, String _Email, String _PhoneNumber, String _Hours) {
         this.Address = _Address;
         this.Email = _Email;
         this.PhoneNumber = _PhoneNumber;
@@ -27,10 +26,10 @@ public class Dealership {
     public void setAddress(String _Address) {this.Address = _Address; }
     public String getEmail() {return Email; }
     public void setEmail(String _Email) {this.Email = _Email;}
-    public int getPhoneNumber() {return PhoneNumber;}
-    public void setPhoneNumber(int _PhoneNumber) {this.PhoneNumber = _PhoneNumber;}
-    public int getHours() {return Hours;}
-    public void setHours(int _Hours) {this.Hours = _Hours;}
+    public String getPhoneNumber() {return PhoneNumber;}
+    public void setPhoneNumber(String _PhoneNumber) {this.PhoneNumber = _PhoneNumber;}
+    public String getHours() {return Hours;}
+    public void setHours(String _Hours) {this.Hours = _Hours;}
 
     public static void PrintDealershipInfo(ArrayList<Dealership> DealershipList) {
         for (Dealership dealership : DealershipList) {
