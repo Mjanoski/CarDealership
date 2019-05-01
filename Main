@@ -5,11 +5,13 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        Dealership d1 = new Dealership("123 Main Street",  "Dealership@gmail.com", 215555555, 10);
-        Dealership d2 = new Dealership("123 Main Street", "Dealership@gmail.com", 215555555, 8);
+        Dealership d1 = new Dealership("123 Main Street",  "Dealership@gmail.com",
+                "(215)555-5555", "10:00am - 10:00pm");
         ArrayList<Dealership> DealershipList = new ArrayList<>();
         DealershipList.add(d1);
-        DealershipList.add(d2);
         Dealership.PrintDealershipInfo(DealershipList);
     }
 }
+
+
+
