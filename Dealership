@@ -40,3 +40,17 @@ public class Dealership {
         }
     }
 }
+/**
+ *
+ * @param Address       Address
+ * @param Email         Email
+ * @param PhoneNumber   Phone Number
+ * @param Hours         Hours
+ * @return              Address
+ * @return              Email
+ * @return              Phone Number
+ * @return              Hours
+ * @author              Michael Janoski
+ * @version             1.0
+ * @since               4/20/19
+ */
